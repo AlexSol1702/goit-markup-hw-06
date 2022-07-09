@@ -75,13 +75,100 @@
           </button>
         </div>
       </section>
+      <!-- Modal window -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
           <button type="button" class="icon-close-btn" data-modal-close>
-            <svg width="11" height="11">
+            <svg width="11" height="11" class="icon-close">
               <use href="./imges/icons.svg#icon-close"></use>
             </svg>
           </button>
+          <form class="modal-form">
+            <ul class="list">
+              <li class="form-list">
+                <div class="form">
+                  <label for="name" class="form-lbl">Имя</label>
+
+                  <input
+                    type="text"
+                    name="user-name"
+                    id="name"
+                    class="form-inp"
+                    placeholder=" "
+                  />
+
+                  <svg class="modal-input-icon">
+                    <use href="./imges/icons.svg#user"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="form-list">
+                <div class="form">
+                  <label for="phone" class="form-lbl">Телефон</label>
+
+                  <input
+                    type="tel"
+                    name="user-phone"
+                    id="phone"
+                    class="form-inp"
+                    placeholder=" "
+                  />
+
+                  <svg class="modal-input-icon">
+                    <use href="./imges/icons.svg#tel"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="form-list">
+                <div class="form">
+                  <label for="mail" class="form-lbl">Почта</label>
+
+                  <input
+                    type="text"
+                    name="user-mail"
+                    id="mail"
+                    class="form-inp"
+                    placeholder=" "
+                  />
+
+                  <svg class="modal-input-icon">
+                    <use href="./imges/icons.svg#mail-1"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="form-list">
+                <div class="form textarea">
+                  <label for="comments" class="form-lbl">Коментарии</label>
+                  <textarea
+                    id="comments"
+                    name="comments"
+                    class="form-inp textarea"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </div>
+              </li>
+            </ul>
+            <label class="agreement">
+              <input
+                type="checkbox"
+                name="agreement"
+                class="agreement-inp visually-hidden"
+              />
+              <span class="agreement-custom-check">
+                <svg class="agreement-icon" width="15" height="14">
+                  <use class="icon-check" href="./imges/icons.svg#birdie"></use>
+                </svg>
+              </span>
+              <span class="agreement-txt">
+                Соглашаюсь с рассылкой и принимаю
+                <span
+                  ><a href="#" class="agreement-link">Условия договора</a></span
+                ></span
+              ></label
+            >
+            <button type="submit" class="btn-submit">Отправить</button>
+          </form>
         </div>
       </div>
       <!--peculiarities-->
@@ -511,6 +598,30 @@
                 ><svg class="social-icon">
                   <use href="./imges/icons.svg#icon-linkedin"></use></svg
               ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <label for="subscribe" class="subscribe-title"
+            >Подпишитесь на рассылку</label
+          >
+          <ul class="subscribe-list list">
+            <li>
+              <input
+                class="subscribe-mail"
+                type="text"
+                name="user-mail"
+                id="subscribe"
+                placeholder="E-mail"
+              />
+            </li>
+            <li>
+              <button type="submit" class="subscribe-btn">
+                <span class="subscribe-btn-txt">Подписаться</span>
+                <svg class="subscribe-icon">
+                  <use href="./imges/icons.svg#icon-send"></use>
+                </svg>
+              </button>
             </li>
           </ul>
         </div>
